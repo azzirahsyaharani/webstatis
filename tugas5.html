@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baca Di Tebet</title>
+    <link rel="icon" type="images/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="footer.css">
+
+    <section id="intro" class="s-intro">
+        <div class="s-intro__bg"></div>
+
+        <header>
+          <div class="header">
+            <a href="#default" class="logo"><img style="text-align: justify; width:120 ; height: 65px;" src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="header">
+              <a class="active" href="#home">Home</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </button>
+            </div>
+          </div>
+        </header>
+
+    <header class="s-intro__hearder">
+      <div class="s-intro__logo">
+        <a class="logo" href="index.html">
+            <img src="images/bdt-logo.png" style="display:block; margin:auto; alt="Homepage">
+          </a>
+          <h3 style="color: #36281b;""><marquee scrolldelay="158"  direction="right"> Holla.. Sobat Pustaka!</h3></marquee>
+          <h1 style="text-align: center;" class="text-huge-title">
+            <marquee direction="left" style="color: #36281b;">Selamat datang.. pada laman Baca Di Tebet dimana Perpustakaan dan Ruang Temu jadi satu tempat temu yang seru!</marquee>
+            </h1>
+      </div>
+  </header>
+</head>
+
+  <style>
+     body {
+        background-color: #dcdac4;
+        background-attachment: fixed;
+        backdrop-filter: blur(01px);
+        padding-bottom: 0%;
+        padding-top: 0%;
+        height: auto;
+        text-align: justify;
+    }
+    img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        margin: 10px;
+    }
+    .city {
+      background-color: #f9f4e7;
+      color: #36281b;
+      border: 1px #938a83;
+      margin: 20px;
+      padding: 20px;
+    }
+    .sosialmedia {
+        display: inline-flex;
+    }
+    .note {
+            font-size: 120%;
+            color:#938a83;
+    }
+     {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #938a83;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #36281b;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.youtube{
+  justify-content: center;
+  display: flex;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* HTML classes */
+.note {
+            font-size: 120%;
+            color: #938a83;
+        }
+        /* HTML ID */
+        #B {
+            color: #938a83;
+            font-family: bookman old style;
+        }
+
+        img {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #938a83;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: #645e59;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    background-color:#938a83 ;
+    color: #fff;
+}
+
+footer img {
+    width: 280px;
+    height: 160px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px;
+}
+
+.footer_info {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+.footer_info p { 
+    font-size: 15px;
+    padding: 20px;
+   
+}
+
+    </style>
+    <!-- s-intro__scroll -->
+  
+  </section>
+
+<body>
+    <br>
+    <!--Tentang Kami-->
+    <!--HTML Block & Inline-->
+    <div class="city" class="row">
+      <div class="column">
+        <h1 style="text-align: center; border: 3px solid #938a83" class="text-huge-title text-center">Tentang Kami</h1>
+        <!-- end tab-nav -->
+        <div class="tab-content">
+          <!-- 01 - tab about -->
+          <div id="tab-about" class="tab-content__item" data-tab-active="" role="tabpanel" aria-hidden="false" aria-labelledby="tab-link-0">
+            <div class="row tab-content__item-header">
+            </div>
+            <div class="row">
+              <div class="column">
+                <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-indent: 0.5in; padding-left: 2%; padding-right: 2%; text-align: justify;">
+                    <span class="note">Baca Di Tebet</span>
+                   hadir sebagai alternatif dari ruang-ruang publik yang bersifat konsumeristik. Di saat dunia tergila-gila dengan kecanggihan dunia virtual. kami memilih menghadirkan sebuah ruang berbentuk perpustakaan fisik. Di tengah masyarakat yang mengglorifikasi kehidupan instan serta berorientasi pada hasil yang lebih penting daripada proses, kami mengajak masyarakat untuk berproses, dimulai dari membaca buku konvensional. Pengingat bahwa nasi yang ada di piring tidak terjadi begitu saja sebagaimana di dunia virtual. Ada proses panjang, mulai dari menanam padi hingga memasaknya. Seperti itu juga saat kita membaca sebuah buku, membaca satu persatu kata dari judul hingga penutup.
+                </p>
+                <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-indent: 0.5in; padding-left: 2%; padding-right: 2%; text-align: justify;">
+                    <span class="note">Baca Di Tebet</span>
+                  juga merupakan simbol pengingat bahwa selama masih memiliki raga, manusia tidak bisa terlepas dari proses manual. Dunia virtual tidak akan menghilangkan kebutuhan kita akan hal-hal dasar seperti makan, tidur, dan bernapas. Selain itu manusia sebagai makhluk sosial akan selalu membutuhkan interaksi tanpa sekat virtual. BDT bukan sekadar perpustakaan untuk menyimpan buku, tetapi untuk menyimpan, merawat dan mengembangkan pengetahuan.
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+<br>
+
+ <!--Fasilitas-->
+<div class="city">
+  <h1 style="text-align: center; border: 3px solid #938a83" class="text-huge-title text-center">Fasilitas</h1>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 2</div>
+      <img src="images/ruang_baca.jpeg" style="width:100%"> 
+      <div class="text">Ruang Baca</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/ruang_diskusi.jpeg" style="width:100%"> 
+      <div class="text">Ruang Diskusi</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/ruang_karya.jpeg" style="width:100%">
+      <div class="text">Ruang Karya</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="images/ruang_pikir.jpeg" style="width:100%">
+      <div class="text">Ruang Pikir</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 1</div>
+      <img src="images/ruang_RBBJ.jpeg" style="width:100%">
+      <div class="text">Ruang RBBJ</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+</div>
+
+<br>
+<!--Pendaftaran-->
+<!--html tabel dan id-->
+<div class="city">
+<h1 style="text-align: center; border: 3px solid #938a83" class="text-huge-title text-center">Pendaftaran</h1>
+<h3 id="B">Berikut adalah daftar harga untuk biaya pendaftaran BDT:</h3>
+<div style="padding-left: 30px; padding-right: 30px; font-family: bookman old style;">
+<table border="1" cellpadding="10" >
+<tr style="text-align: center;">
+  <th>Harian (RP35K/Hr)</th>
+  <th>Anggota Bulanan (RP100K/Bln)</th>
+  <th>Anggota Tahunan Pelajar dan Mahasiswa (RP600K/Thn)</th>
+  <th>Anggota Tahunan Umum (RP800K/Thn)</th>
+</tr>
+<tr>
+  <td>
+    <ul>
+        <li>Baca Buku Sepuasnya</li>
+        <li>Untuk Umum dan Pelajar</li>
+        <li>Berlaku 1 haru</li>
+        <li>Sebagai Anggota</li>
+        <li>Pinjam Bawa Pulang Koleksi</li>
+        <a href="https://www.loket.com/event/tiketharianbdtpekan2oktober2023"><button onclick="clickDaily()" class="btn">Daftar</button></a>
+    </ul>
+</td>
+<td>
+  <ul>
+      <li>Baca Buku Sepuasnya</li>
+      <li>Untuk Umum dan Pelajar</li>
+      <li>Berlaku 1 Bulan</li>
+      <li>Sebagai Anggota</li>
+      <li>Bawa Pulang Koleksi</li>
+      <a href="https://www.loket.com/event/tiketbulananbdtpekan2oktober2023"><button onclick="clickDaily()" class="btn">Daftar</button></a>
+  </ul>
+</td>
+<td>
+  <ul>
+      <li>Baca Buku Sepuasnya</li>
+      <li>Khusus Pelajar</li>
+      <li>Berlaku 1 Tahun</li>
+      <li>Sebagai Anggota</li>
+      <li>Pinjam Bawa Pulang</li>
+      <a href="https://www.loket.com/event/tikettahunanpelajarbdtpekan2oktober2023"><button onclick="clickDaily()" class="btn">Daftar</button></a>
+  </ul>
+</td>
+<td>
+  <ul>
+      <li>Baca Buku Sepuasnya</li>
+      <li>Untuk Umum</li>
+      <li>Berlaku 1 Tahun</li>
+      <li>Sebagai Anggota</li>
+      <li>Pinjam Bawa Pulang</li>
+      <a href="https://www.loket.com/event/tikettahunanumumbdtpekan2oktober2023"><button onclick="clickDaily()" class="btn">Daftar</button></a>
+  </ul>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+<br>
+<!--Tanya Jawab-->
+<div class="city">
+  <h1 style="text-align: center; border: 3px solid #938a83" class="text-huge-title text-center">Tanya Jawab</h1>
+  <button class="accordion" style="font-size: 18px;">Apa saja peraturan di BDT?</button>
+  <div class="panel">
+    <ul style="font-size: 15px;">
+      <li>Pembaca HARUS minimal berumur 12 tahun saat mendaftar menjadi anggota</li>
+      <li>Pembaca PELAJAR adalah pembaca yang sedang menjalani pendidikan setara Sekolah Menengah Pertama (SMP) dan Sekolah Menengah Atas (SMA).</li>
+      <li>Pembaca MAHASISWA adalah pembaca yang sedang menjalani pendidikan setara Perguruan Tinggi sampai tingkat S1</li>
+      <li>Pembaca dari umum adalah semua pembaca yang bukan dari pelajar ataupun mahasiswa S1.</li>
+      <li>Pembaca melakukan pembayaran untuk setiap sesi langganan sesuai dengan pilihannya</li>
+    </ul>
+  </div>
+  
+  <button class="accordion" style="font-size: 18px;">Fasilitas ruang baca di BDT?</button>
+  <div class="panel">
+    <ul style="font-size: 15px;">
+      <li>Ruang RBBJ ( Roy B. B. Janis ) atau Ruang Temu di perbolehkan membawa makanan dan minuman, dan ketika selesai membaca buku harus diletakkan kembali di troli terdekat.</li>
+      <li>Ruang Pikir dan Ruang Baca. Tidak diperbolehkan membawa makanan dan minuman, dan ruangan tersebut juga ruangan silent room tidak diperbolehkan untuk berkomunikasi melaui telephone, zoom dan sebagainya.</li>
+      <li>Ruang Karya. Hanya bisa diakses dengan orang yang sudah melakukan Daftar atau perjanjian.</li>
+    </ul>
+  </div>
+  
+  <button class="accordion"style="font-size: 18px;">Bagaimana cara masuk ke BDT?</button>
+  <div class="panel">
+    <p style="font-size: 15px;">Daftar tiket harian dilakukan pada hari yang sama dengan hari pemesanan.</p>
+    <ul style="font-size: 15px;">
+      <li>Pilihlah paket yang ingin anda pilih</li>
+      <li>Isi formulir pendaftarana</li>
+      <li>Lakukan pembayaran</li>
+    </ul>
+  </div>
+
+  <button class="accordion"style="font-size: 18px;">Apakah bisa melakukan pembayaran melalui transfer?</button>
+  <div class="panel">
+    <p style="font-size: 15px;">Ya, tentu saja bisa melalui transfer</p>
+    <ul style="font-size: 15px;">
+      <li>Pilihlah paket yang ingin anda pilih</li>
+      <li>Isi formulir pendaftarana</li>
+      <li>Lakukan pembayaran menggunakan virtual account yang anda miliki</li>
+    </ul>
+  </div>
+
+  <button class="accordion"style="font-size: 18px;">Bagaimana cara pergi ke BDT menggunakan kendaraan umum?</button>
+  <div class="panel">
+    <p style="font-size: 15px;">BDT dapat diakses menggunakan kendaraan umum seperti bus dan kereta komuter, caranya sebagai berikut:</p>
+    <ul style="font-size: 15px;">
+      <li>Jika anda bepergian dengan kereta komuter, anda bisa turun di Stasiun Cawang lalu melajutkan menggunakan ojek online atau berjalan kaki dengan menempuh waktu 15 menit dari stasiun</li>
+      <li>Jika naik bus Transjakarta bisa turun di halte Tebet BUMD dan dilanjutkan menggunakan ojek online atau berjalan kaki dengan menempuh waktu sekitar 5 menit dari halte</li>
+    </ul>
+  </div>
+
+  <button class="accordion"style="font-size: 18px;">Bagaimana cara melakukan pendaftaran anggota?</button>
+  <div class="panel">
+    <ul style="font-size: 15px;">
+      <li>Pilihlah opsi sebagai anggota bulanan atau tahunan</li>
+      <li>Isi formulir pendaftaran yang tersedia</li>
+      <li>Lakukan pembayaran</li>
+    </ul>
+  </div>
+
+  <button class="accordion"style="font-size: 18px;">Bagaimana jika ingin membawa rombongan ke BDT?</button>
+  <div class="panel">
+    <p style="font-size: 15px;">Bisa, Untuk melakukan pendaftaran rombongan, anda bisa menghubungi admin untuk melakukan 
+      <a href="https://wa.me/62811889829?text=Halo%20Admin%2C%20bagaimana%20cara%20melakukan%20pendaftaran%20rombongan" style="color: #00B9AE;">pendaftaran rombongan.</a>
+    </p>
+  </div>
+  
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+</div>
+
+<div class="city">
+  <h1 style="text-align: center; border: 3px solid #938a83" class="text-huge-title text-center">Sosial Media</h1>
+  <div class="youtube">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XQmrKmPfemY?si=3x--JnMavxWEJKRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </div>
+ 
+</div>
+
+<h2 style="font-family: bookman old style; padding-left: 30px; padding-right: 30px;">Apakah kalian tertarik
+  dengan
+  <span style="border: 2px solid #938a83;">Baca Di Tebet?</span>
+</h2>
+<!--HTML Form-->
+<form style="font-family: bookman old style; padding-left: 30px; padding-right: 30px; font-size: large;">
+  <input type="radio" id="Yes" name="fav_language" value="Ya">
+  <label for="Yes">Ya</label><br>
+  <input type="radio" id="No" name="fav_language" value="Tidak">
+  <label for="No">Tidak</label><br><br>
+  <h2>Daftarkan diri anda segera!</h2>
+  <label for="name">Nama:</label><br>
+  <input type="text" id="name" name="name" value=""><br>
+  <label for="tlp">Telepon:</label><br>
+  <input type="text" id="tlp" name="tlp" value=""><br>
+  <label for="almt">Email:</label><br>
+  <input type="text" id="email" name="almt" value=""><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+
+<!--Sosial Media-->
+
+
+
+<!--Kontak-->
+<footer>
+  <div class="footer_info">
+    <div class="footer_width1">
+      <img src="images/bdt-logo.png" alt="">
+      <p class="tulisan1">Baca Di Tebet - Perpustakaan
+        dan Ruang Temu</p>
+      <p class="tulisan2">Jl. Tebet Barat Dalam Raya no. 29, Tebet Jakarta Selatan </p>
+      <p> 12810 Jakarta, Indonesia</p>
+    </div>
+    <div class="footer_width2">
+      <h2 style="margin-top: 25px; font-size: 20px;">Lokasi Baca Di Tebet </h2>
+      <iframe class="gmap_iframe" width="380px" height="399px" style="margin-top: 20px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=658&amp;height=250&amp;hl=en&amp;q=Baca di tebet&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+  </div>
+  <div class="copyrigth">
+    <p style="text-align: center; ">Copyright © 2023 by Azzirah Syaharani</p>
+  </div>
+  
+</footer>
+</body>
+</html>
