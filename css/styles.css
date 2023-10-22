@@ -1,0 +1,462 @@
+/*ini adalah comment*/
+
+/*reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.container{
+    margin: auto;
+}
+img {
+    width: none; /*ukuran gambar*/
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+   
+}
+
+/*class*/
+.pback {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-bottom: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.head {
+    border-radius: 10px;
+    background-color: #2D388B;
+    color: #f5f5f5;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.head2 {
+    border-radius: 10px;
+    background-color: #B80505;
+    color: #FFCE20;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.head2 {
+    border-radius: 10px;
+    background-color: #B80505;
+    color: #FFCE20;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.head3 {
+    border-radius: 10px;
+    background-color: aqua;
+    color: #FFB7D1;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.city {
+    background-color: #f9f4e7;
+    color: #36281b;
+    border: 1px #938a83;
+    margin: 20px;
+    padding: 20px;
+  }
+.par {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    text-indent: 0.5in; 
+    padding-left: 2%; 
+    padding-right: 2%; 
+    text-align: justify;
+}
+
+.wrapper-list {
+    background-color: black;
+
+}
+
+/*HELPERS*/
+.pt-10 {
+    padding-top: 70px;
+}
+.text-red {
+    color: #B80505;
+}
+.fw-700{
+    font-weight: 700;
+    font-family: 'Titillium-Web-700', sans-serif;
+}
+.fw-900 {
+    font-weight: 900;
+    font-family: 'Titillium-Web-900', sans-serif;
+}
+.fw-500 {
+    font-weight: 500;
+    font-family: 'Titillium-Web-500',sans-serif;
+}
+.gx-5 {
+    --bs-gutter-x: 5rem;
+}
+.text-blue{
+    color: #2D388B;
+}
+.bg-pink{
+    background: #FFB7D1;
+}
+.fs-72{
+    font-size: 72px;
+}
+.btn-rounded{
+    border-radius: 10px;
+}
+/*END HELPERS*/
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.pl-3{
+    padding-left: 30px;
+}
+.bg-blue{
+    background: #2D388B;
+}
+.text-yellow{
+   color: #FFCE20
+}
+
+.nav-link {
+    height: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    width: 100%;
+    font-family: 'Titillium-Web-700', sans-serif;
+    color: #000;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem 2rem;
+}
+
+.active {
+    background-color: #B80505;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.nav-link:hover,
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    background-color: #b80505c2;
+    color: #fff;
+}
+
+.scrollspy {
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.navbar .container {
+    width: 100%;
+}
+
+#navbar {
+    position: relative;
+}
+.side-link{
+    background-color: #FFDA58;
+    font-weight: 900;
+    color: #000000;
+    font-size: 18px;
+    text-decoration: none;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Titillium-Web-700', sans-serif;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.carousel-item > .d-flex img{
+    width: 379px; 
+    height: 171px;
+}
+#exhibitions {
+    overflow: hidden;
+    margin-top: 60px;
+}
+.logo{
+ min-height: 10px; /*ukuran gambar*/
+}
+.content{
+    color: #2D388B;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: 'Titillium-Web-700', sans-serif;
+}
+
+.logos-area{
+    min-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.logos-area > .row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.location-area{
+    background: #FFCE20;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 97px;
+    letter-spacing: 0.03em;
+    font-family: 'Titillium-Web-900', sans-serif;
+    justify-content: start;
+}
+
+.text-adderess{
+    height: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 30px;
+}
+
+.socialmedia{
+background: #FFF9DB;
+    height: 476px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.instagram-posts {
+    height:auto;
+}
+.instagram-posts > .row > .col{
+    background: #e3e3e3;
+}
+.accordion-button{
+    background: #FFB7D1;
+    border: 5px solid #2D388B;
+    color: #2D388B;
+    font-size: 30px;
+}
+.accordion-button:not(.collapsed){
+     background: #2D388B;
+     border: 5px solid #2D388B;
+     color: #fff;
+}
+.accordion-body {
+    background: #FFB7D1;
+     border: 5px solid #2D388B;
+     color: #2D388B;
+}
+.accordion-item{
+    border: 0;
+}
+.accordion-button:focus{
+    border-color: #2D388B;
+    box-shadow: none;
+}
+.accordion-button::after{
+    background-image: none;
+    content: "+";
+    font-size: 18px;
+    font-weight: 900;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: none;
+    content: "-";
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+}
+#faq{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+     padding-bottom: 100px;
+}
+#faq .col-4{
+    position: relative;
+}
+#faq .row{
+    width: 100%;
+}
+#faq .row .col-sm-4{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.faq-sticky {
+    position: sticky;
+    display:block;
+    top: 30vh;
+}
+#faq .mx-auto{
+    width: 100%;
+}
+.faq-sticky{
+    font-size: 72px;
+}
+footer{
+    position: relative;
+    top: 120px;
+    color: #fff;
+    letter-spacing: 0.03em;
+}
+footer h1{
+    font-size: 64px;
+}
+footer .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.scrollTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.scrollTop button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.679);
+}
+.d-only-mobile {
+    display: block;
+}
+
+.d-only-pc {
+    display: none;
+}
+
+@media screen and (max-width:576px){
+.location-area > .container > .row {
+    flex-direction: column-reverse;
+}
+.content {
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: 'Titillium-Web-700', sans-serif;
+}
+.logos-area{
+    height: auto;
+    min-height: auto;
+}
+.logo{
+    min-height: 10px; 
+}
+footer .image-container{
+    justify-content: start;
+}
+footer{
+    margin: auto;
+    width: 100%;
+}
+.d-only-mobile{
+    display:none;
+}
+.d-only-pc{
+    display: block;
+}
+
+.heading {
+    font-size: 32px;
+}
+.text-adderess{
+    font-size: 16px;
+}
+.faq-sticky{
+    position: relative;
+    top: 0;
+}
+#faq .row .col-sm-4{
+    position: relative;
+    top: 0;
+}
+#faq .row{
+    margin: auto;
+}
+}
+
+@media screen and (max-width:992px){
+    .side-link{
+        position: relative;
+        top: 14px;
+    }
+    .instagram-posts{
+        overflow: hidden;
+    }
+    .right-70 {
+        position: absolute;
+        right: 20%;
+        top: 5px;
+    }
+    .navbar{
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    .scrollTop{
+        right: 30px;
+        bottom: 50px;
+    }
+}
+
+
+
